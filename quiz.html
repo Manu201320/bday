@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Time!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Quiz Container -->
+  <div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-teal-500 to-blue-500">
+    <div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full">
+      <h1 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Let’s Get to Know You! 🚀</h1>
+      
+      <!-- Quiz Form -->
+      <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="mb-4">
+          <p class="text-lg text-gray-700">What’s your favorite type of music?</p>
+          <label><input type="radio" name="question1" value="Rock"> Rock</label><br>
+          <label><input type="radio" name="question1" value="Pop"> Pop</label><br>
+          <label><input type="radio" name="question1" value="Classical"> Classical</label><br>
+          <label><input type="radio" name="question1" value="Hip-Hop"> Hip-Hop</label>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="mb-4">
+          <p class="text-lg text-gray-700">What’s your go-to comfort food?</p>
+          <label><input type="radio" name="question2" value="Pizza"> Pizza</label><br>
+          <label><input type="radio" name="question2" value="Ice Cream"> Ice Cream</label><br>
+          <label><input type="radio" name="question2" value="Sushi"> Sushi</label><br>
+          <label><input type="radio" name="question2" value="Fries"> Fries</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="mb-4">
+          <p class="text-lg text-gray-700">How do you like to spend your weekends?</p>
+          <label><input type="radio" name="question3" value="Watching movies at home"> Watching movies at home</label><br>
+          <label><input type="radio" name="question3" value="Sleeping"> Sleeping</label><br>
+          <label><input type="radio" name="question3" value="Hanging out with friends"> Hanging out with friends</label><br>
+          <label><input type="radio" name="question3" value="Catching up on work/study"> Catching up on work/study</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="mb-4">
+          <p class="text-lg text-gray-700">If I could travel anywhere right now, where would I go?</p>
+          <label><input type="radio" name="question4" value="Paris"> Paris</label><br>
+          <label><input type="radio" name="question4" value="Tokyo"> Tokyo</label><br>
+          <label><input type="radio" name="question4" value="New York City"> New York City</label><br>
+          <label><input type="radio" name="question4" value="Bora Bora"> Bora Bora</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="mb-4">
+          <p class="text-lg text-gray-700">What’s my favorite hobby?</p>
+          <label><input type="radio" name="question5" value="Reading"> Reading</label><br>
+          <label><input type="radio" name="question5" value="Playing sports"> Playing sports</label><br>
+          <label><input type="radio" name="question5" value="Music"> Music</label><br>
+          <label><input type="radio" name="question5" value="Cooking"> Cooking</label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="mb-4">
+          <p class="text-lg text-gray-700">If I were to win the lottery, what’s the first thing I’d do?</p>
+          <label><input type="radio" name="question6" value="Buy a car"> Buy a car</label><br>
+          <label><input type="radio" name="question6" value="Go on a vacation"> Go on a vacation</label><br>
+          <label><input type="radio" name="question6" value="Save it for the future"> Save it for the future</label><br>
+          <label><input type="radio" name="question6" value="Donate to charity"> Donate to charity</label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="mb-4">
+          <p class="text-lg text-gray-700">What’s my favorite season of the year?</p>
+          <label><input type="radio" name="question7" value="Spring"> Spring</label><br>
+          <label><input type="radio" name="question7" value="Summer"> Summer</label><br>
+          <label><input type="radio" name="question7" value="Rainy"> Rainy</label><br>
+          <label><input type="radio" name="question7" value="Winter"> Winter</label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="mb-4">
+          <p class="text-lg text-gray-700">What’s my most ridiculous talent?</p>
+          <label><input type="radio" name="question8" value="Making weird animal noises"> Making weird animal noises</label><br>
+          <label><input type="radio" name="question8" value="Reciting movie quotes in every conversation"> Reciting movie quotes in every conversation</label><br>
+          <label><input type="radio" name="question8" value="Doing a perfect cartwheel (after 10 tries)"> Doing a perfect cartwheel (after 10 tries)</label><br>
+          <label><input type="radio" name="question8" value="Speaking fluent gibberish"> Speaking fluent gibberish</label>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="mb-4">
+          <p class="text-lg text-gray-700">If I could eat one food for the rest of my life, what would it be?</p>
+          <label><input type="radio" name="question9" value="Pizza (always with extra cheese)"> Pizza (always with extra cheese)</label><br>
+          <label><input type="radio" name="question9" value="Breakfast food (pancakes, eggs, bacon)"> Breakfast food (pancakes, eggs, bacon)</label><br>
+          <label><input type="radio" name="question9" value="Cake (but only the frosting)"> Cake (but only the frosting)</label><br>
+          <label><input type="radio" name="question9" value="Pasta (because, why not?)"> Pasta (because, why not?)</label>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="mb-4">
+          <p class="text-lg text-gray-700">What’s the most likely reason I’d miss a meeting?</p>
+          <label><input type="radio" name="question10" value="Got distracted by a cute animal video"> Got distracted by a cute animal video</label><br>
+          <label><input type="radio" name="question10" value="Fell into a deep nap"> Fell into a deep nap</label><br>
+          <label><input type="radio" name="question10" value="Forgot the time while eating snacks"> Forgot the time while eating snacks</label><br>
+          <label><input type="radio" name="question10" value="Accidentally took a wrong turn and got lost in the city"> Accidentally took a wrong turn and got lost in the city</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="button" onclick="submitQuiz()" class="inline-block bg-blue-600 text-white text-lg font-medium py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out">
+          Submit Quiz!
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const correctAnswers = {
+      question1: "pop",
+      question2: "Pizza",
+      question3: "sleeping",
+      question4: "Paris",
+      question5: "music",
+      question6: "Go on a vacation",
+      question7: "rainy",
+      question8: "Making weird animal noises",
+      question9: "Pasta (because, why not?)",
+      question10: "Fell into a deep nap",
+    };
+
+    function submitQuiz() {
+      const form = document.getElementById('quizForm');
+      const formData = new FormData(form);
+      const result = {};
+      let score = 0;
+
+      formData.forEach((value, key) => {
+        result[key] = value;
+        if (correctAnswers[key] === value) {
+          score++;
+        }
+      });
+
+      // Store the score and answers to localStorage
+      localStorage.setItem('quizScore', score);
+      localStorage.setItem('quizResults', JSON.stringify(result));
+
+      // Redirect to the result page
+      window.location.href = 'quiz-result.html';
+    }
+  </script>
+
+</body>
+</html>

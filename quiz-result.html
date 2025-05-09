@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Results</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Result Container -->
+  <div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-600 to-pink-500">
+    <div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full text-center">
+      <h1 class="text-3xl font-semibold text-gray-800 mb-6">Your Quiz Results! 🎉</h1>
+      
+      <!-- Display the Result -->
+      <div id="resultDisplay" class="text-lg text-gray-600 mb-8">Loading...</div>
+
+      <a href="next-page.html" class="inline-block bg-blue-600 text-white text-lg font-medium py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out">
+        next
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Retrieve the score and answers from localStorage
+    const score = localStorage.getItem('quizScore');
+    const answers = JSON.parse(localStorage.getItem('quizResults'));
+
+    // Display the score and answers
+    const resultDisplay = document.getElementById('resultDisplay');
+    resultDisplay.innerHTML = `
+      <p class="font-semibold text-xl">Your score: ${score} points</p>
+      <p class="mt-4">Your answers:</p>
+      <ul class="text-left">
+        ${Object.keys(answers).map(key => {
+          return `<li><strong>${key}:</strong> ${answers[key]}</li>`;
+        }).join('')}
+      </ul>
+    `;
+  </script>
+
+</body>
+</html>
